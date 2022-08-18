@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" sizes="32x32" type="image/png" href="./JS.ico">
+    <link rel="icon" sizes="16x16" type="image/png" href="./JS.ico">
+    <script src="./script.js"></script>
+    <title>Blogcito JavaScript</title>
+  </head>
+  <body class="background">
+    <h1 class="Title">Metodos de arreglos</h1>
+    <div class="container">
+      <h3 class="method-title">
+        array<strong class="strong">.unshift</strong>
+      </h3>
+      <p class="description">
+        Agrega un elemento en la posición 0 de nuestro array.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB" ] <br />
+        <br />
+        array_ejemplo<strong class="strong">.unshift</strong>( "stringC" );
+        <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo );
+        <br /><br />
+        Obtendremos por consola: [ "stringC", "stringA", "stringB" ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.shift</strong></h3>
+      <p class="description">
+        Elimina el elemento que se encuentre en la posición 0 de nuestro array.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC" ] <br />
+        <br />
+        array_ejemplo<strong class="strong">.shift</strong>(); <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo );
+        <br /><br />
+        Obtendremos por consola: [ "stringB", "stringC" ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.pop</strong></h3>
+      <p class="description">
+        Elimina el elemento que se encuentra en la ultima posición de nuestro
+        array.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC" ] <br />
+        <br />
+        array_ejemplo<strong class="strong">.pop</strong>(); <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo );
+        <br /><br />
+        Obtendremos por consola: [ "stringA", "stringB" ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.splice</strong></h3>
+      <p class="description">
+        Cambia el contenido de un array eliminando elementos existentes y/o
+        agregando nuevos elementos.
+      </p>
+      <p class="description">
+        Como primer parametro recibe el indice del rango del elemento o los
+        elementos a eliminar y/o reemplazar. <br />
+        y como segundo parametro la cantidad de elementos a eliminar a partir
+        del indice indicado anteriormente.
+      </p>
+      <p class="description">
+        Puede recibir como parametro el elemento a reemplazar por el eliminado.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC", "stringD", "stringE" ] <br />
+        <br />
+        array_ejemplo<strong class="strong">.splice</strong>(1,4); <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo );
+        <br /><br />
+        Obtendremos por consola: [ "stringA" ]
+      </p>
+      <p class="examples_container">
+        <strong class="example_text"
+          >Ejemplo enviando elemento a reemplazar: </strong
+        ><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC", "stringD", "stringE" ] <br />
+        <br />
+        array_ejemplo<strong class="strong">.splice</strong>(2, 2, "reemplazo1",
+        "reemplazo2"); <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo );
+        <br /><br />
+        Obtendremos por consola: [ 'stringA', 'stringB', 'reemplazo1',
+        'reemplazo2', 'stringE' ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.join</strong></h3>
+      <p class="description">
+        Devuelve un string con todos los elementos del arreglo indicado. <br />
+        <br />
+        No modifica nuestro arreglo, hace una copia del mismo.
+      </p>
+      <p class="description">
+        Puede recibir como parametro el divisor que vamos a emplear entre
+        nuestro strings.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC" ] <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="keyword"
+          >.join</strong
+        >() ); <br /><br />
+        Obtendremos por consola: stringA,stringB,stringC,stringD,stringE
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo indicando divisor: </strong
+        ><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA",
+        "stringB", "stringC" ] <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="keyword"
+          >.join</strong
+        >(" - ") ); <br /><br />
+        Obtendremos por consola: stringA - stringB - stringC - stringD - stringE
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.concat</strong></h3>
+      <p class="description">
+        Concatena dos arreglos. No los modifica. <br />
+        <br />
+        Devuelve un nuevo arreglo con el resultado de la concatenación.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo1 = [ "stringA",
+        "stringB" ] <br /> <br>
+        <strong class="keyword">let </strong>array_ejemplo2 = [ 10,
+        20 ]
+        <br /> <br>
+        console<strong class="keyword">.log</strong>( array_ejemplo1<strong
+          class="keyword"
+          >.concat</strong
+        >( array_ejemplo2 ) ); <br /><br />
+        Obtendremos por consola: [ "stringA", "stringB", 10, 20 ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.slice</strong></h3>
+      <p class="description">
+        Retorna un nuevo array cortando el array indicado con los indices
+        indicados del mismo.
+      </p>
+      <p class="description">
+        Recibe dos parametros ( indice 1 e indice 2 ). Donde indice 1 indica el
+        inicio del corte, e indice 2 indica el final del corte.
+      </p>
+      <p class="description">
+        No abarca el ultimo elemento señalado por el indice 2 al retornar.
+        <br />
+        Es decir, retorna un array que comienza desde el primer elemento
+        señalado, hasta el ante ultimo elemento señalado por los indices.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA", "stringB","stringC", 10, 20 ] <br /> <br>
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="keyword"
+          >.slice</strong
+        >( 2, 4 ) ); <br /><br />
+        Obtendremos por consola: [ "stringC", 10 ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">
+        array<strong class="strong">.indexOf</strong>
+      </h3>
+      <p class="description">Nos permite conocer el indice de un elemento en nuestro array.</p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword">let </strong>array_ejemplo = [ "stringA", "stringB","stringC", 10, 20 ] <br /> <br>
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="keyword"
+          >.slice</strong
+        >( "StringC" ) ); <br /><br />
+        Obtendremos por consola: 2
+      </p>
+    </div>
+    <div class="container">
+        <h3 class="method-title">
+          array<strong class="strong">.reverse</strong>
+        </h3>
+        <p class="description">Nos permite revertir el orden de nuestro array.</p>
+        <p class="examples_container">
+            <strong class="example_text">Ejemplo: </strong><br />
+            <br />
+            <strong class="keyword">let </strong>array_ejemplo = [ "stringA", "stringB","stringC", 10, 20 ] <br /> <br>
+            console<strong class="keyword">.log</strong>( array_ejemplo<strong
+              class="keyword"
+              >.reverse</strong
+            >( ) ); <br /><br />
+            Obtendremos por consola: [ 20, 10, "stringC", "stringB", "stringA" ]
+          </p>  
+    </div>
+    <footer class="footer"> Escrito con  ♥  por Augusto Iphar </footer>
+  </body>
+</html>
