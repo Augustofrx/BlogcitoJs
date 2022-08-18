@@ -92,6 +92,7 @@ body {
     position: fixed;
     top: 1.5em;
     left: .3em;
+    transition: .25s;
 }
 
 .githubLogo {
@@ -100,4 +101,28 @@ body {
     position: fixed;
     top: 5em;
     left: .1em;
+    transition: .25s;
+}
+
+.twitterLogo {
+    width: 2.3em;
+    height: 2.3em;
+    position: fixed;
+    top: 9em;
+    left: .4em;
+    transition: .25s;
+}
+
+.twitterLogo:hover, .githubLogo:hover, .linkedLogo:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+    .githubLogo, .linkedLogo, .twitterLogo {
+        display: none;
+    }
+
+    .footer {
+        margin-top: 2em;
+    }
 }
