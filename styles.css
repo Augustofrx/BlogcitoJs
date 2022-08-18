@@ -6,7 +6,7 @@ body {
 
 .background {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(149, 73, 145);
+    background: linear-gradient(90deg, rgba(255,0,198,0.8995973389355743) 0%, rgba(162,0,255,1) 33%, rgba(0,61,255,1) 100%);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
