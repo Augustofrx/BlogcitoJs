@@ -85,3 +85,19 @@ body {
     padding-bottom: .5em;
     font-size: 18px;
 }
+
+.linkedLogo{ 
+    width: 2.5em;
+    height: 2.5em;
+    position: fixed;
+    top: 1.5em;
+    left: .3em;
+}
+
+.githubLogo {
+    width: 2.8em;
+    height: 2.8em;
+    position: fixed;
+    top: 5em;
+    left: .1em;
+}
