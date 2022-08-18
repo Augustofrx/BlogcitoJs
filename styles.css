@@ -6,7 +6,7 @@ body {
 
 .background {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(159, 238, 221);
+    background-color: rgb(5, 107, 86);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body {
 
 .description {
     width: 90%;
-    background-color: rgb(6, 118, 96);
+    background-color: rgb(5, 107, 86);
     color: rgb(237, 237, 237);
     padding: 1em;
     border-radius: .2em;
