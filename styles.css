@@ -25,6 +25,18 @@ body {
     font-size: 32px;
 }
 
+.subTitle {
+    color: rgb(244, 248, 0);
+    width: 90%;
+    padding: .5em;
+    background-color: #1f2023;
+    margin: .2em;
+    border-radius: .2em;
+    text-align: center;
+    font-size: 32px;
+}
+
+
 .container{
     background-color: #1f2023;
     width: 90%;
@@ -64,6 +76,11 @@ body {
 .keyword_var {
     color: rgb(152, 200, 255);
     font-weight: 600;
+}
+
+.console_result {
+    color: rgb(214, 152, 255);
+
 }
 
 .example_text {
@@ -125,4 +142,14 @@ body {
     .footer {
         margin-top: 2em;
     }
+}
+
+
+@media (max-width: 450px) {
+    .subTitle, .Title {
+        font-size: 22px;
+        padding: 1em;
+    }
+
+    
 }

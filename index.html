@@ -15,21 +15,20 @@
     <link rel="icon" sizes="16x16" type="image/png" href="./JS.ico" />
 
     <meta property="og:image" content="https://blogcitojs.netlify.app/JS.png" />
-    <meta property="og:url" content="https://blogcitojs.netlify.app/" />
+    <meta property="og:url" content="https://blogcitojs.netlify.app" />
     <link rel="shortcut icon" href="https://blogcitojs.netlify.app/JS.ico" />
-    <script src="./script.js"></script>
     <title>Blogcito JavaScript</title>
   </head>
   <body class="background">
     <a target="_blank" href="https://www.linkedin.com/in/augustofrx/"
       ><img class="linkedLogo" src="./LinkedLogoByMe.png" alt="linkedLogo"
     /></a>
-    <a target="_blank"  href="https://github.com/Augustofrx"
-    ><img class="githubLogo" src="./github.png" alt="githubLogo"
-  /></a>
-  <a target="_blank"  href="https://twitter.com/iphar16"
-  ><img class="twitterLogo" src="./twitter.png" alt="twitterLogo"
-/></a>
+    <a target="_blank" href="https://github.com/Augustofrx"
+      ><img class="githubLogo" src="./github.png" alt="githubLogo"
+    /></a>
+    <a target="_blank" href="https://twitter.com/iphar16"
+      ><img class="twitterLogo" src="./twitter.png" alt="twitterLogo"
+    /></a>
     <h1 class="Title">Métodos de arreglos</h1>
     <div class="container">
       <h3 class="method-title">
@@ -49,7 +48,8 @@
         <br />
         console<strong class="keyword">.log</strong>( array_ejemplo );
         <br /><br />
-        Obtendremos por consola: [ "stringC", "stringA", "stringB" ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringC", "stringA", "stringB" ]
       </p>
     </div>
     <div class="container">
@@ -67,7 +67,8 @@
         <br />
         console<strong class="keyword">.log</strong>( array_ejemplo );
         <br /><br />
-        Obtendremos por consola: [ "stringB", "stringC" ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringB", "stringC" ]
       </p>
     </div>
     <div class="container">
@@ -86,7 +87,8 @@
         <br />
         console<strong class="keyword">.log</strong>( array_ejemplo );
         <br /><br />
-        Obtendremos por consola: [ "stringA", "stringB" ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringA", "stringB" ]
       </p>
     </div>
     <div class="container">
@@ -114,7 +116,8 @@
         <br />
         console<strong class="keyword">.log</strong>( array_ejemplo );
         <br /><br />
-        Obtendremos por consola: [ "stringA" ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringA" ]
       </p>
       <p class="examples_container">
         <strong class="example_text"
@@ -129,8 +132,8 @@
         <br />
         console<strong class="keyword">.log</strong>( array_ejemplo );
         <br /><br />
-        Obtendremos por consola: [ 'stringA', 'stringB', 'reemplazo1',
-        'reemplazo2', 'stringE' ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        'stringA', 'stringB', 'reemplazo1', 'reemplazo2', 'stringE' ]
       </p>
     </div>
     <div class="container">
@@ -154,7 +157,8 @@
           class="strong"
           >.join</strong
         >() ); <br /><br />
-        Obtendremos por consola: stringA,stringB,stringC,stringD,stringE
+        <strong class="console_result">Obtendremos por consola:</strong>
+        stringA,stringB,stringC,stringD,stringE
       </p>
       <p class="examples_container">
         <strong class="example_text">Ejemplo indicando divisor: </strong><br />
@@ -166,7 +170,8 @@
           class="strong"
           >.join</strong
         >(" - ") ); <br /><br />
-        Obtendremos por consola: stringA - stringB - stringC - stringD - stringE
+        <strong class="console_result">Obtendremos por consola:</strong> stringA
+        - stringB - stringC - stringD - stringE
       </p>
     </div>
     <div class="container">
@@ -189,7 +194,8 @@
           class="strong"
           >.concat</strong
         >( array_ejemplo2 ) ); <br /><br />
-        Obtendremos por consola: [ "stringA", "stringB", 10, 20 ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringA", "stringB", 10, 20 ]
       </p>
     </div>
     <div class="container">
@@ -218,7 +224,8 @@
           class="strong"
           >.slice</strong
         >( 2, 4 ) ); <br /><br />
-        Obtendremos por consola: [ "stringC", 10 ]
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "stringC", 10 ]
       </p>
     </div>
     <div class="container">
@@ -238,7 +245,7 @@
           class="strong"
           >.indexOf</strong
         >( "StringC" ) ); <br /><br />
-        Obtendremos por consola: 2
+        <strong class="console_result">Obtendremos por consola:</strong> 2
       </p>
     </div>
     <div class="container">
@@ -256,9 +263,202 @@
           class="strong"
           >.reverse</strong
         >( ) ); <br /><br />
-        Obtendremos por consola: [ 20, 10, "stringC", "stringB", "stringA" ]
+        <strong class="console_result">Obtendremos por consola:</strong> [ 20,
+        10, "stringC", "stringB", "stringA" ]
+      </p>
+    </div>
+    <h2 class="subTitle">
+      Métodos de arreglos basados en High Order Functions
+    </h2>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.find</strong></h3>
+      <p class="description">
+        El método find() recibe una función de comparación por parámetro (es
+        decir, una función que captura el elemento que se está recorriendo y
+        retorna true o false según la comparación que ejecuta). 
+      </p> <p class="description">
+        El método
+        retorna el primer elemento del array que cumpla con esa condición.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [ "stringA",
+        "stringB","stringC", 10, 20 ] <br />
+        <br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.find</strong
+        >( <strong class="keyword">function</strong>(e) { return e === "stringB"
+        } ) ); <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> stringB
+        ;
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">
+        array<strong class="strong">.forEach</strong>
+      </h3>
+      <p class="description">
+        El método forEach() Itera sobre el array de referencia y por cada
+        elemento del array ejecuta la función que enviemos por parámetro, la
+        cual recibe a su vez el elemento del array que se está recorriendo.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [1, 2, 3, 4, 5,
+        6] <br />
+        <br />
+        array_ejemplo<strong class="strong">.forEach</strong>(
+        <strong class="keyword">function</strong>( n ) { console<strong
+          class="keyword"
+          >.log</strong
+        >( n ) } ); <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong>
+        <br /><br />
+        1 <br />
+        2 <br />
+        3 <br />
+        4 <br />
+        5 <br />
+        6
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.some</strong></h3>
+      <p class="description">
+        El método some() funciona igual que el método find(), recibiendo una
+        función de búsqueda, con la diferencia que en vez de retornar el
+        elemento encontrado, el método some retorna true o false según el
+        resultado de la iteración de búsqueda.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [ { nombre:
+        "Javascript", precio: 15000 }, <br />
+        { nombre: "ReactJS", precio: 22000 }, <br />
+        { nombre: "AngularJS", precio: 22000 }, <br />
+        { nombre: "Desarrollo Web", precio: 16000 }, ];
+        <br /><br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.some</strong
+        >( <strong class="keyword">function</strong>( c ) { return c.nombre ===
+        "Desarrollo Web" } ) ); <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> true;
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.map</strong></h3>
+      <p class="description">
+        El método map() se utiliza para crear un nuevo array con todos los
+        elementos del array original, transformados según las operaciones de la
+        función enviada por parámetro. 
+      </p>  <p class="description">
+        El nuevo array obtenido tiene la misma
+        cantidad de elementos que el array original, pero los elementos que se
+        almacenan son el return de la función enviada por parámetro.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [ { nombre:
+        "Javascript", precio: 15000 }, <br />
+        { nombre: "ReactJS", precio: 22000 }, <br />
+        { nombre: "AngularJS", precio: 22000 }, <br />
+        { nombre: "Desarrollo Web", precio: 16000 }, ];
+        <br /><br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.map</strong
+        >( <strong class="keyword">function</strong>( c ) { return c.nombre } )
+        ); <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> [
+        "Javascript", "ReactJS", "AngularJS","Desarrollo Web" ]
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.reduce</strong></h3>
+      <p class="description">
+        El método reduce() nos permite obtener un único valor tras iterar sobre
+        el array. Es decir, funciona como un método que resume el array a un único valor
+        de retorno.
+      </p>
+      <p class="description">
+        Se utiliza mucho cuando, por ejemplo, queremos acumular la suma de
+        alguna propiedad de los elementos almacenados, u obtener algún resultado
+        general sobre todo el array.
+      </p>
+      <p class="description">
+        A diferencia de los métodos anteriores, el método reduce recibe dos
+        parámetros. El primero es la función que ordena qué queremos resumir del array, y
+        recibe primero un parámetro que funciona como acumulador y el segundo es
+        el elemento del array que iteramos.
+    
+      </p>
+  
+       
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [ { nombre:
+        "Javascript", precio: 15000 }, <br />
+        { nombre: "ReactJS", precio: 22000 }, <br />
+        { nombre: "AngularJS", precio: 22000 }, <br />
+        { nombre: "Desarrollo Web", precio: 16000 }, ];
+        <br /><br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.reduce</strong
+        >( <strong class="keyword">function</strong>( acumulador, curso ) {
+        return acumulador + curso.precio }, 0 ); <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> 75000
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="method-title">array<strong class="strong">.sort</strong></h3>
+      <p class="description">
+        El método sort() nos permite reordenar un array según un criterio que
+        definamos.
+      </p>
+      <p class="description">
+        Este método es destructivo, es decir que modifica el array sobre el cual
+        se llama.
+      </p>
+      <p class="description">
+        El método recibe una función de comparación por parámetro que recibe dos
+        elementos del array a la vez.
+      </p>
+      <p class="description">
+        La función debe retornar un valor numérico (1, -1, 0) que indica qué
+        elemento se posiciona antes o después. Para ordenar números, basta con
+        restar uno al otro, y el orden indica si será ordenado de forma
+        ascendente o descendente.
+      </p>
+      <p class="examples_container">
+        <strong class="example_text">Ejemplo: </strong><br />
+        <br />
+        <strong class="keyword_var">let </strong>array_ejemplo = [ 40, 1, 5, 200
+        ] <br /><br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.sort</strong
+        >( <strong class="keyword">function</strong>( a, b ) { return a - b } );
+        <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> [ 1, 5,
+        40, 200 ] <br /><br />
+        console<strong class="keyword">.log</strong>( array_ejemplo<strong
+          class="strong"
+          >.sort</strong
+        >( <strong class="keyword">function</strong>( a, b ) { return b - a } );
+        <br /><br />
+        <strong class="console_result">Obtendremos por consola:</strong> [ 200,
+        40, 5, 1 ]
       </p>
     </div>
     <footer class="footer">Escrito con ♥ por Augusto Iphar</footer>
+    <script src="./index.js"></script>
   </body>
 </html>
